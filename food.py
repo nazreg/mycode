@@ -1,10 +1,17 @@
-# Run using python3 by default
 #!/usr/bin/env python3
 
+# docstring with description
+"""
+Find out if you are a carnivore or vegetarian
+author = Marcelo Nazario
+"""
+
+
 # Declare carnivore variable to track user choices
-carnivore=0
+carnivore = 0
 # Declare vegetarian variable to track user choices
-vegetarian=0
+vegetarian = 0
+
 
 # Write function asking user for a choice
 def asker(f1, f2):
@@ -32,19 +39,16 @@ print("__________________________________________")
 print("Please type your preference using the number of the item:")
 
 # Run function with arguments
-asker("Steak","Vegetarian Pizza")
-asker("Chicken Salad","Vegetarian Salad")
-asker("Chicken Wings","Veggie Stuffed Shells")
+asker("Steak", "Vegetarian Pizza")
+asker("Chicken Salad", "Vegetarian Salad")
+asker("Chicken Wings", "Veggie Stuffed Shells")
 
 # Add total of questions answer
-total = carnivore + vegetarian;
+total = carnivore + vegetarian
 # Calculate percentage
-cpercent =carnivore/total*100
-vpercent =vegetarian/total*100
+cpercent = carnivore / total * 100
+vpercent = vegetarian / total * 100
 
 # Print results using f string format
 print(f"You are approximately {int(cpercent)}% carnivore and {int(vpercent)}% vegetarian.")
-
-
-
 
